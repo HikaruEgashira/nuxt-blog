@@ -99,7 +99,10 @@ module.exports = {
   modules: [  
     '@nuxtjs/style-resources',
     ['nuxt-i18n', I18N],
-    'nuxt-webfontloader'
+    'nuxt-webfontloader',
+    ['@nuxtjs/google-adsense', {
+      id: 'ca-pub-6072370590195832'
+    }]
   ],
 
   styleResources: {
