@@ -1,6 +1,6 @@
 ---
 name: 'create-myblog-with-nuxt2'
-trans: 'design-and-code-skeletons-screens'
+trans: '404'
 title: Nuxtでブログを作成２ - nuxt-i18nで日本語対応
 year: 28 May 2019
 color: '#edece7'
@@ -14,11 +14,11 @@ description: |
 
 ## nuxt-i18nでの日本語化
 
-ここでは英語、スペイン語に対応しているNuxtプロジェクトnuxt-markdown-blog-starterを日本語対応するまで行っていこうと思います。
+ここでは英語、スペイン語に対応しているNuxtプロジェクトnuxt-markdown-blog-starterを日本語対応するまで行ないました。
 
 [https://github.com/marinaaisa/nuxt-markdown-blog-starter](https://github.com/marinaaisa/nuxt-markdown-blog-starter)
 
-nuxt.config.jsは
+nuxt.config.jsで
 
 ```javascript
 modules: [  
@@ -28,7 +28,9 @@ modules: [
 ],
 ```
 
-とあり、`const { I18N } = require('./locales/i18n-nuxt-config')`で読み込まれている`i18n-nuxt-config.js`は、
+というふうに読み込み、このI18Nは`const { I18N } = require('./locales/i18n-nuxt-config')`で読み込まれている。
+
+`i18n-nuxt-config.js`は、
 
 ```javascript
 const I18N = {
@@ -65,7 +67,7 @@ module.exports = {
 }
 ```
 
-localeを追加し、デフォルトを日本語にしてみます。
+localesを追加し、ついでにデフォルトを日本語にしました。
 
 ```javascript
 const I18N = {
@@ -77,12 +79,12 @@ const I18N = {
   useCookie: true,
   alwaysRedirect: true,
   locales: [
-    {
-      code: 'ja',
-      iso: 'ja_JP',
-      name: 'Japan',
-      file: 'ja/index.js'
-    },
++   {
++     code: 'ja',
++     iso: 'ja_JP',
++     name: 'Japan',
++     file: 'ja/index.js'
++   },
     {
       code: 'en',
       iso: 'en-US',
@@ -93,7 +95,7 @@ const I18N = {
   lazy: true,
   seo: false,
   langDir: '/locales/',
-  defaultLocale: 'ja',
++ defaultLocale: 'ja',
   parsePages: false
 }
 
@@ -103,7 +105,7 @@ module.exports = {
 
 ```
 
-とりあえず言語の翻訳しないで/locale/jaフォルダを作成しました。
+とりあえず/locale/jaフォルダを作成しました。中に`戻る`や`タイトル`のように記事以外で翻訳すべきところの設定をおこなっています。
 
 ```txt
 .
@@ -115,17 +117,20 @@ module.exports = {
 └── i18n-nuxt-config.js
 ```
 
-ルーティングはnuxt.config.jsで設定する
+### 記事を静的に生成
+
+ルーティングはnuxt.config.jsで設定する。
+手動でルーティングを行うことで
 
 ```javascript
-import blogsJa from './contents/ja/blogsJa.js'
-generate: {
-  routes: [
-    '/en', '404'
-  ]
-  .concat(blogsJa.map(w => `/blog/${w}`))
-  .concat(blogsEn.map(w => `en/blog/${w}`))
-}
++ import blogsJa from './contents/ja/blogsJa.js'
+  generate: {
+    routes: [
++     '/en', '404'
+    ]
++   .concat(blogsJa.map(w => `/blog/${w}`))
++   .concat(blogsEn.map(w => `en/blog/${w}`))
+  }
 ```
 
 ./contents/ja/blog.jsに記事リストを記述してある。

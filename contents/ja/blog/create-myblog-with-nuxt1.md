@@ -1,6 +1,6 @@
 ---
 name: 'create-myblog-with-nuxt1'
-trans: 'design-and-code-skeletons-screens'
+trans: '404'
 title: Nuxtでブログを作成１ - NuxtのマークダウンブログサイトOSSの紹介
 year: 28 May 2019
 color: '#edece7'
@@ -16,7 +16,7 @@ description: |
 
 [README.md](https://github.com/marinaaisa/nuxt-markdown-blog-starter/blob/master/README.md)を逆引き風意訳します。
 
-このプロジェクトはマークダウンをHTML変換してブログ風にリスト作成までしています。
+このプロジェクトはマークダウンをHTML変換してブログ風にリスト作成まで行うアプリケーションです。
 i18nで英語とスペイン語に対応しています。
 
 ### プロジェクトファイルの構成
@@ -103,4 +103,4 @@ i18nで英語とスペイン語に対応しています。
 
 のような記述でスケルトン画面を追加できます。
 
-i18nでの日本語化を次回行っていこうと思います。
+次回はi18nでの日本語化を行っていこうと思います。

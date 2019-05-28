@@ -1,6 +1,6 @@
 ---
 name: 'create-myblog-with-nuxt0'
-trans: 'design-and-code-skeletons-screens'
+trans: '404'
 title: Nuxtでブログを作成０
 year: 28 May 2019
 color: '#edece7'
