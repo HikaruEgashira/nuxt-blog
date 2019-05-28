@@ -1,4 +1,4 @@
 export default {
-  title: '江頭輝',
-  description: 'Nuxt勢。いろいろ作ります。<a href="egahika.ml">egahika.ml</a>'
+  title: 'Hikaru Note',
+  description: 'NuxtとかPythonとかやってます。活動報告、躓いたところなどを残していく取り組み'
 }

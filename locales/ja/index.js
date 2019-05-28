@@ -6,7 +6,7 @@ export default {
   soonLanguagePost: 'can\'t read English',
   comeBack: '戻る',
   indexPageHead: indexPageHead,
-  posts: 'HikaruEgashira Blog',
+  posts: 'Hikaru Note',
   home: 'Home',
   footer: footer
 }

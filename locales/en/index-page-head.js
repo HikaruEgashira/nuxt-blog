@@ -1,4 +1,4 @@
 export default {
-  title: 'HikaruEgashira',
-  description: 'I ♡ Nuxt.'
+  title: 'HikaruEgashira Blog',
+  description: 'Nuxt UI/UX Python blog.'
 }
