@@ -1,4 +1,4 @@
 export default {
-  title: 'Marina Aísa - Product Designer and Front-End Developer',
-  description: 'I’m a Product Designer (UI/UX) and Front-End Developer based in Barcelona.'
+  title: '江頭輝',
+  description: 'Nuxt勢。いろいろ作ります。<a href="egahika.ml">egahika.ml</a>'
 }
