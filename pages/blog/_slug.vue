@@ -18,7 +18,7 @@
               v-if="trans"
               v-for="(locale, i) in showLocales"
               :key="i"
-              :to="`${locale.code == 'en' ? '' : '/' + locale.code}/blog/${trans}`"
+              :to="`${locale.code == 'ja' ? '' : '/' + locale.code}/blog/${trans}`"
             >
                 {{ $t('changeLanguagePost') }}
             </nuxt-link>
@@ -120,9 +120,9 @@
         return `${process.env.baseUrl}/images/blog/${this.id}/_thumbnail.jpg`;
       },
       pageTitle () {
-        return this.title + ' – Marina Aisa';
+        return this.title + ' – 江頭輝ブログ';
       },
-      showLocales () {
+      showLocales () {  
         return this.$i18n.locales.filter(locale => locale.code !== this.$i18n.locale)
       },
       hreflang () {
@@ -132,7 +132,7 @@
         return {
           hid: 'alternate-hreflang-' + this.showLocales[0].iso,
           rel: 'alternate',
-          href: `${process.env.baseUrl + (this.showLocales[0].code === 'en' ? '' : '/es')}/blog/${this.trans}`,
+          href: `${process.env.baseUrl + (this.showLocales[0].code === 'ja' ? '' : '/en')}/blog/${this.trans}`,
           hreflang: this.showLocales[0].code
         }
       },

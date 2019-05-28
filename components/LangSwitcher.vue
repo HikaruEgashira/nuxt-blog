@@ -16,9 +16,9 @@ export default {
     }
   },
   methods: {
-    changeLocale () { 
+    changeLocale () {
       this.$router.push(this.switchLocalePath(this.selected));
-    } 
+    }
   }
 }
 </script>

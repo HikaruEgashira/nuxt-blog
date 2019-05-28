@@ -1,14 +1,14 @@
 const builtAt = new Date().toISOString()
 const path = require('path')
 const { I18N } = require('./locales/i18n-nuxt-config')
+import blogsJa from './contents/ja/blogsJa.js'
 import blogsEn from './contents/en/blogsEn.js'
-import blogsEs from './contents/es/blogsEs.js'
 
 const productionUrl = {
-  en: "/en",
-  es: "/es"
+  ja: "/ja",
+  en: "/en"
 };
-const baseUrl = 'https://marinaaisa.com';
+const baseUrl = 'https://blog.egahika.ml';
 
 module.exports = {
   env: {
@@ -19,13 +19,13 @@ module.exports = {
     title: 'Marina Aisa | Product Designer & Front-end Developer',
     meta: [
       { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no' },
+      { name: 'viewport', content: 'width=device-width,initial-scale=1.0,user-scalable=1' },
       { name: 'msapplication-TileColor', content: '#ffffff' },
       { name: 'msapplication-TileImage', content: '/favicons/mstile-144x144.png' },
       { name: 'theme-color', content: '#c1c1c1' },
       { name: 'robots', content: 'index, follow' },
       { name: 'twitter:card', content: 'summary_large_image' },
-      { name: 'twitter:site', content: '@marinaaisa' },
+      { name: 'twitter:site', content: '@ITF_hikary' },
       { property: 'og:type', content: 'profile' },
       { property: 'og:updated_time', content: builtAt }
     ],
@@ -120,9 +120,9 @@ module.exports = {
 
   generate: {
     routes: [
-      '/es', '404'
+      '/en', '404'
     ]
-    .concat(blogsEn.map(w => `/blog/${w}`))
-    .concat(blogsEs.map(w => `es/blog/${w}`))
+    .concat(blogsJa.map(w => `/blog/${w}`))
+    .concat(blogsEn.map(w => `en/blog/${w}`))
   }
 }
