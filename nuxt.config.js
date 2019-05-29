@@ -101,7 +101,8 @@ module.exports = {
     ['nuxt-i18n', I18N],
     'nuxt-webfontloader',
     ['@nuxtjs/google-adsense', {
-      id: 'ca-pub-6072370590195832'
+      id: 'ca-pub-6072370590195832',
+      pageLevelAds: true
     }]
   ],
 
