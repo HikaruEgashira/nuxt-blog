@@ -1,3 +1,17 @@
+---
+name: 'create-myblog-with-nuxt0'
+trans: '404'
+title: WSL2でGUIを起動したい(VcXsrv)
+year: 28 May 2019
+color: '#edece7'
+isTextColorDark: true
+noMainImage: true
+extraComponent: 'Datatable'
+id: 'design-and-code-skeletons-screens'
+description: |
+  fastプレビューの内容です
+---
+
 ## 目的
 
 [WSLでmatplotlibやgnuplotでプロットができない - Qiita](https://qiita.com/ryoi084/items/c4339996c50c0cf39df4)
