@@ -2,7 +2,7 @@
 name: 'create-myblog-with-nuxt0'
 trans: '404'
 title: WSL2でGUIを起動したい(VcXsrv)
-year: 28 May 2019
+year: 16 June 2019
 color: '#edece7'
 isTextColorDark: true
 noMainImage: true
