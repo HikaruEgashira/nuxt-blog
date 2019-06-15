@@ -1,5 +1,5 @@
 ---
-name: 'create-myblog-with-nuxt0'
+name: 'wsl2gui'
 trans: '404'
 title: WSL2でGUIを起動したい(VcXsrv)
 year: 16 June 2019
