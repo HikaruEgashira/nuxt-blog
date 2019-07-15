@@ -22,7 +22,7 @@
     "vue-lazyload": "^1.2.6"
   },
   "devDependencies": {
-    "frontmatter-markdown-loader": "^1.6.0",
+    "frontmatter-markdown-loader": "^1.8.0",
     "highlight.js": "^9.15.6",
     "node-sass": "^4.11.0",
     "responsive-loader": "^1.2.0",
